@@ -1,6 +1,6 @@
 //Business Logic
 
-const userNum = 14;
+const userNum = 23;
 const numToStrng = [];
 let roboArray = [];
 
@@ -10,6 +10,8 @@ for ( let i = 0; i <= userNum ; i++) {
   // roboArray.push(i);
   if(i.toString().includes(3)) {
     roboArray.push("Won't you be my neighbor?")
+  }else if (i.toString().includes(2)) {
+    roboArray.push("Boop!")
   }else {
     roboArray.push(i);
   }
