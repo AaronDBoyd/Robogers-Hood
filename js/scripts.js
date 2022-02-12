@@ -1,13 +1,13 @@
 //Business Logic
 
-const userNum = 23;
+const userNum = "hello";
 
 
 
 function beepBoop(userNum) {
-  const roboArray = [];
+  let roboArray = [];
   if(isNaN(userNum)) {
-    roboArray.push("Please insert a *bleeping* NUMBER!")
+    roboArray.push("Please insert a *bleeping* NUMBER!");
   } else{
     for ( let i = 0; i <= userNum ; i++) {
       if(i.toString().includes(3)) {
@@ -20,8 +20,9 @@ function beepBoop(userNum) {
     roboArray.push(i);
       }
     }
+  }
     return roboArray;
-  }}; 
+  }; 
 
 
 
