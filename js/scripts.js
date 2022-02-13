@@ -1,11 +1,11 @@
 //Business Logic
 
-const userNum = "hello";
+// const userNum = 32;
 
 
 
 function beepBoop(userNum) {
-  let roboArray = [];
+  const roboArray = [];
   if(isNaN(userNum)) {
     roboArray.push("Please insert a *bleeping* NUMBER!");
   } else{
@@ -24,6 +24,14 @@ function beepBoop(userNum) {
     return roboArray;
   }; 
 
-
+//UI Logic
+$(document).ready(function(){
+  $("#roboForm").submit(function(event) {
+  event.preventDefault();
+  let number = $("input#number").val();
+  $("#output").text(beepBoop().toString());
+  beepBoop(number);
+});
+})
 
 
