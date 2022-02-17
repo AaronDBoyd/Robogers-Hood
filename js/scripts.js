@@ -26,12 +26,12 @@ function beepBoop(userNum) {
 
 //UI Logic
 $(document).ready(function(){
-  $("#roboForm").submit(function(event) {
+  $(".btn").click(function(event) {
   event.preventDefault();
-  let number = $("input#number").val();
-  $("#output").text(beepBoop().toString());
-  beepBoop(number);
+  let number = parseInt($("#number").val());
+  $("#output").text(beepBoop(number));
+  
+  });
 });
-})
 
 
