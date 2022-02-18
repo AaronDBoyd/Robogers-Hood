@@ -1,9 +1,4 @@
 //Business Logic
-
-// const userNum = 32;
-
-
-
 function beepBoop(userNum) {
   const roboArray = [];
   if(isNaN(userNum)) {
@@ -22,7 +17,7 @@ function beepBoop(userNum) {
     }
   }
     return roboArray;
-  }; 
+  };
 
 //UI Logic
 $(document).ready(function(){
