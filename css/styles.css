@@ -16,11 +16,19 @@ p {
  img {
   width: 60%;
   height: auto;
-  border: 10px dotted rgb(65, 136, 202);
+  border: 10px dotted rgb(97, 170, 238);
   padding: -10px;
 }
 
 h1 {
   text-decoration: underline
   ;
+}
+
+#output {
+  height: auto;
+  width: auto;
+  background-color:rgb(235, 145, 61);
+  font-family: georgia;
+  font-size: auto;
 }
